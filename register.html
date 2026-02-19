@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register - NajiWeb</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="split-container">
+        <div class="main-card register-box">
+            <h2>Create Account</h2>
+            <div class="login-form">
+                <input type="text" id="regName" placeholder="Full Name">
+                <input type="text" id="regUser" placeholder="Username">
+                <div class="pass-wrapper">
+                    <input type="password" id="regPass" placeholder="Password">
+                    <i class="fa-solid fa-eye" id="toggleRegPass"></i>
+                </div>
+                <input type="number" id="regContact" placeholder="Contact No.">
+                <input type="number" id="regAge" placeholder="Age">
+                <input type="date" id="regBirth">
+                
+                <button type="button" id="registerBtn" class="reg-action-btn">Register User</button>
+                <p style="margin-top:10px;">Already have an account? <a href="login.html">Login</a></p>
+                <button type="button" class="exit-action-btn exit-link">Exit to Menu</button>
+            </div>
+        </div>
+
+        <div class="main-card list-box">
+            <h2>User Database</h2>
+            <p>Total Registered: <span id="userCount">0</span></p>
+            <input type="text" id="searchBar" placeholder="🔍 Search database...">
+            <div id="userList" class="infinite-scroll"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
